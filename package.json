@@ -1,0 +1,30 @@
+{
+  "name": "template-11ty-tailwind",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "postcss src/assets/css/styles.css -o _site/assets/css/styles.css",
+    "build": "npm run build:css && eleventy",
+    "start": "eleventy --serve",
+    "watch:css": "postcss src/assets/css/styles.css -o _site/assets/css/styles.css --watch",
+    "dev": "npm run watch:css & npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "autoprefixer": "^10.4.19",
+    "css-loader": "^7.1.2",
+    "cssnano": "^7.0.1",
+    "mini-css-extract-plugin": "^2.9.0",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0",
+    "postcss-loader": "^8.1.1",
+    "tailwindcss": "^3.4.3",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
