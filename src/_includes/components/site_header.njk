@@ -1,0 +1,40 @@
+<header class="text-white py-4 w-full fixed z-50">
+    <nav class="max-w-7xl mx-auto">
+        <div class="mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="relative flex items-center justify-between h-16">
+                <!-- Logo y menú de escritorio -->
+                <a href="/" class="flex flex-row items-center gap-5">
+                    <img class="block h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow">
+                    <p>
+                        Band Name
+                    </p>
+                </a>
+                <div class="hidden sm:flex sm:items-center sm:space-x-4 sm:ml-6">
+                    <a href="/" class="px-3 py-2 rounded-md text-sm font-medium text-white bg-gray-900" aria-current="page">Home</a>
+                    <a href="/portfolio" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">Portfolio</a>
+                    <a href="/about-us" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">About Us</a>
+                    <a href="/blog" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">Blog</a>
+                    <a href="/contact-us" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700">Contact Us</a>
+                </div>
+                <!-- Botón de menú móvil -->
+                <div class="sm:hidden flex items-center">
+                    <button id="menu-toggle" class="p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-16 6h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Menú móvil -->
+        <div class="hidden" id="menu-mobile">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="/" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-900" aria-current="page">Home</a>
+                <a href="/portfolio" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Portfolio</a>
+                <a href="/about-us" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">About Us</a>
+                <a href="/blog" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Blog</a>
+                <a href="/contact-us" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+</header>

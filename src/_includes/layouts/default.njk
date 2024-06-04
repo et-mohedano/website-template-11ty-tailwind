@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="shortcut icon" href="/assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    {% include "components/site_header.njk" %}
+    
+    <main class="overflow-hidden pt-20">
+        <div class="max-w-7xl mx-auto">
+        {% block content %}
+          {{ content | safe }}
+        {% endblock %}
+        </div>
+    </main>
+
+    {% include "components/footer.njk" %}
+    <script src="/assets/js/components/header.js"></script>
+</body>
+</html>

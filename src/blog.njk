@@ -1,0 +1,13 @@
+---
+layout: layouts/default
+title: "Índice del Blog"
+permalink: blog/index.html
+---
+<h1>Índice del Blog</h1>
+<ul>
+{% for post in collections.blog %}
+    <li>
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+    </li>
+{% endfor %}
+</ul>

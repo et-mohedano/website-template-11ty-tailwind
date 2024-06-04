@@ -1,0 +1,15 @@
+:root {
+    --main-bg-color: rgb(31 41 55 / 1);
+}
+
+header {
+    background-color: var(--main-bg-color);
+}
+
+footer {
+    background-color: var(--main-bg-color);
+}
+
+#menu-toggle:checked ~ #menu-mobile {
+    display: block;
+}

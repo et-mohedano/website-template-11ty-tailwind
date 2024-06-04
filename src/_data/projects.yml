@@ -1,0 +1,34 @@
+# src/_data/projects.yml
+- title: "Corporate Website Redesign"
+  description: "Complete redesign of the corporate website to improve user interface and customer experience."
+  client: "XYZ Corporation"
+  objective: "Increase visitor-to-customer conversion by 20% in the first year."
+  status: "Completed"
+  image_preview: "https://plus.unsplash.com/premium_photo-1661675403671-164eefd1864e?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  link: "https://example.com/project-redesign"
+  attachments:
+    - "/assets/docs/brief-project1.pdf"
+    - "/assets/docs/design-specs-project1.pdf"
+    - "/assets/docs/final-report-project1.pdf"
+
+- title: "Mobile App Development"
+  description: "Creation of a mobile app to facilitate online bookings and orders."
+  client: "La Buena Mesa Restaurant"
+  objective: "Expand the restaurant's digital services to include mobile ordering and bookings."
+  status: "In development"
+  image_preview: "https://images.unsplash.com/photo-1518773553398-650c184e0bb3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  link: "https://example.com/la-buena-mesa-app"
+  attachments:
+    - "/assets/docs/initial-proposal-project2.pdf"
+    - "/assets/docs/progress-update1-project2.pdf"
+
+- title: "Digital Marketing Campaign"
+  description: "Comprehensive digital marketing strategy focusing on social media and SEO."
+  client: "Innovative Startup"
+  objective: "Improve brand recognition and increase website traffic by 50%."
+  status: "Planning"
+  image_preview: "https://images.unsplash.com/photo-1585076641399-5c06d1b3365f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  link: "https://example.com/startup-marketing"
+  attachments:
+    - "/assets/docs/marketing-strategy-project3.pdf"
+    - "/assets/docs/content-calendar-project3.pdf"
