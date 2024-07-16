@@ -1,9 +1,13 @@
 const yaml = require("js-yaml");
+const { format } = require('date-fns');
 module.exports = function(eleventyConfig) {
     eleventyConfig.addCollection('blog', function(collectionApi) {
         return collectionApi.getFilteredByGlob('src/blog/**/*.md');
     });
-
+    // Add filter date
+    eleventyConfig.addFilter('dateFormat', function(date, formatStr) {
+        return format(date, formatStr);
+    });
     // Support YAML for global data files
     eleventyConfig.addDataExtension("yml", contents => yaml.load(contents));
 

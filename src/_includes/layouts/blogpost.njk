@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="shortcut icon" href="/assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/styles.css" type="text/css">
 </head>
 <body>
-    <header>
+    {% include "components/site_header.njk" %}
+    <article class="overflow-hidden pt-40 pb-20 px-6">
         <h1>{{ title }}</h1>
-    </header>
-    <article>
+        <div>
+            <img src="{{ featured_image }}">
+        </div>
         {{ content | safe }}
     </article>
+    
+    {% include "components/footer.njk" %}
+    <script src="/assets/js/components/header.js"></script>
 </body>
 </html>
