@@ -1,6 +1,7 @@
 const yaml = require("js-yaml");
 const { format } = require('date-fns');
 const eleventySitemap = require("@quasibit/eleventy-plugin-sitemap");
+require('dotenv').config();
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addCollection('blog', function(collectionApi) {
@@ -15,7 +16,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPlugin(eleventySitemap, {
         sitemap: {
-          hostname: "https://tu-dominio.com", // your domain
+          hostname: process.env.SITE_URL,
         },
       });
 
