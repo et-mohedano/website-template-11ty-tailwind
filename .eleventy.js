@@ -16,7 +16,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPlugin(eleventySitemap, {
         sitemap: {
-          hostname: process.env.SITE_URL,
+          hostname: process.env.SITE_URL || "https://your-domain.com",
         },
       });
 
