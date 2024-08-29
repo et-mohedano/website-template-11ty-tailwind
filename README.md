@@ -35,7 +35,9 @@ https://website-template-11ty-tailwind.pages.dev/
 
 3. Install dependencies:
 
+```console
    npm install
+```
 
 ## Usage
 
