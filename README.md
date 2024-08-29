@@ -59,7 +59,7 @@ npm run build
 
 This command will generate the static files in the _site directory.
 
-### Comandos del `package.json`
+### `package.json` Commands
 
 - **build:css**: `postcss src/assets/css/styles.css -o _site/assets/css/styles.css`  
   This command processes the main CSS file using PostCSS and outputs it to the `_site/assets/css/styles.css` directory.
