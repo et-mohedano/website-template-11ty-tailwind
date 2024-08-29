@@ -1,5 +1,7 @@
 const yaml = require("js-yaml");
 const { format } = require('date-fns');
+const eleventySitemap = require("@quasibit/eleventy-plugin-sitemap");
+
 module.exports = function(eleventyConfig) {
     eleventyConfig.addCollection('blog', function(collectionApi) {
         return collectionApi.getFilteredByGlob('src/blog/**/*.md');
@@ -10,6 +12,12 @@ module.exports = function(eleventyConfig) {
     });
     // Support YAML for global data files
     eleventyConfig.addDataExtension("yml", contents => yaml.load(contents));
+
+    eleventyConfig.addPlugin(eleventySitemap, {
+        sitemap: {
+          hostname: "https://tu-dominio.com", // your domain
+        },
+      });
 
     eleventyConfig.addPassthroughCopy("assets/css");
     eleventyConfig.addPassthroughCopy("src/assets/js");
