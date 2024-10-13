@@ -8,21 +8,50 @@
     <meta property="og:title" content="{{ title | safe }}">
     <meta property="og:description" content="{{ description | safe }}">
     <meta property="og:image" content="{{ featured_image | safe }}">
+    <meta property="og:type" content="article">
     <link rel="shortcut icon" href="/assets/icons/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon.ico">
     <link rel="stylesheet" href="/assets/css/styles.css" type="text/css">
+    <link rel="preload" href="/assets/css/styles.css" as="style">
 </head>
-<body>
+<body class="font-sans bg-gray-100 text-gray-800 leading-relaxed">
+
     {% include "components/site_header.njk" %}
-    <article class="overflow-hidden pt-40 pb-20 px-6">
-        <h1>{{ title }}</h1>
-        <div>
-            <img src="{{ featured_image }}">
+
+    <main class="max-w-6xl mx-auto pt-24 pb-16 px-6 md:px-10 ">
+        <div class="max-w-7xl mx-auto">
+            <section class="bg-white shadow-md rounded-lg overflow-hidden mb-10">
+                <div class="flex flex-col md:flex-row items-center">
+                    <!-- Meta Information and Title -->
+                    <div class="w-full md:w-1/2 p-8">
+                        <h1 class="text-4xl font-bold text-gray-900 mb-4">{{ title }}</h1>
+                        <div class="text-gray-500 mb-4">
+                            <p>By <span class="font-semibold">{{ author }}</span>, {{ author_role }}</p>
+                            <p>{{ date }} in <span class="font-semibold text-blue-600">{{ category }}</span></p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <img src="{{ author_image }}" alt="{{ author }} image" class="w-12 h-12 rounded-full object-cover">
+                            <div class="text-sm">
+                                <p class="font-semibold">{{ author }}</p>
+                                <p>{{ author_role }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Featured Image -->
+                    <div class="w-full md:w-1/2">
+                        <img class="w-full h-full object-cover" src="{{ featured_image }}" alt="{{ title }} featured image">
+                    </div>
+                </div>
+            </section>
+
+            <article class="prose lg:prose-xl max-w-none bg-white shadow-md rounded-lg px-6 md:px-10 py-10">
+                {{ content | safe }}
+            </article>
         </div>
-        {{ content | safe }}
-    </article>
-    
+    </main>
+
     {% include "components/footer.njk" %}
-    <script src="/assets/js/components/header.js"></script>
+
+    <script src="/assets/js/components/header.js" defer></script>
 </body>
 </html>
