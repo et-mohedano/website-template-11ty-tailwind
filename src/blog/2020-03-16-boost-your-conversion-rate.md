@@ -1,6 +1,7 @@
 ---
 layout: layouts/blogpost
 title: "Boost Your Conversion Rate"
+description: "Boost Your Conversion Rate"
 permalink: blog/boost-your-conversion-rate/
 date: "2020-03-16"
 category: "Marketing"
