@@ -442,4 +442,38 @@ permalink: /index.html
     </ul>
   </div>
 </div>
+<div>
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+  <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+    createChat({
+    webhookUrl: 'https://juls99.app.n8n.cloud/webhook/08dca4c6-c59d-42db-b125-040a9ca66158/chat',
+    webhookConfig: {
+      method: 'POST',
+      headers: {}
+    },
+    target: '#n8n-chat',
+    mode: 'window',
+    chatInputKey: 'chatInput',
+    chatSessionKey: 'sessionId',
+    metadata: {},
+    showWelcomeScreen: false,
+    defaultLanguage: 'en',
+    initialMessages: [
+      'Hola! 👋',
+      'Mi nombre es Chef manatí, ¿En qué puedo ayudarte hoy?'
+    ],
+    i18n: {
+      en: {
+        title: 'Hola que tal! 👋',
+        subtitle: "Estoy aquí para atenderte.",
+        footer: '',
+        getStarted: 'Inicia conversación',
+        inputPlaceholder: 'Escribe tu pregunta..',
+      },
+    },
+  });
+  </script>
+</div>
 <!-- END TEAM SECTION -->
